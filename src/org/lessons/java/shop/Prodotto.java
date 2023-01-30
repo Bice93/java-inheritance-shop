@@ -59,6 +59,15 @@ public class Prodotto {
 		
 		public double getPriceIva() {
 			return price + ((price * iva)/100);
-		}	
+		}
+		
+		public String stringProduct() {
+					return "Codice: " + getNumberCode()
+					+ " - Nome: " + getName()
+					+ " - Brand: " + getBrand()
+					+ " - Prezzo: " + getPrice()
+					+ " - IVA: " + getIva()
+					+ " - Prezzo con iva: " + getPriceIva() + "€";
+		}
 		
 }
